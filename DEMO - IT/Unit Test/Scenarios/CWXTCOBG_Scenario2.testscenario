@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?totaltestVersion 19.6.2.v20191015-0349_130?>
+<!--Topaz for Total Test 19.6.2.v20191015-0349_130 14-Nov-2019 12:19:13-->
+<testscenario:testscenario xmlns:checkconditions="http://www.compuware.com/model/xml/checkconditions" xmlns:listructure="http://www.compuware.com/model/xml/listructure" xmlns:properties="http://www.compuware.com/model/xml/properties" xmlns:testcase="http://www.compuware.com/model/xml/testcase" xmlns:testscenario="http://www.compuware.com/model/xml/testscenario" alias="" id="Unit%20Test/Scenarios/CWXTCOBG_Scenario2.testscenario">
+  <testscenario:description></testscenario:description>
+  <testscenario:testcases>
+    <testscenario:testcase alias="" csect="CWXTCOBG" encoding="1047" entrypoint="CWXTCOBG#C" id="Unit%20Test/Scenarios/CWXTCOBG_Scenario.testscenario%23CWXTCOBGCase1" target="CWXTCOBG">
+      <testcase:description></testcase:description>
+      <testcase:ddio>SALESSUP.ISPW.PLAY.QA.DBASE3</testcase:ddio>
+      <testcase:ddiotype>DDIO</testcase:ddiotype>
+      <testcase:targetCaptureCompileTime>1573257115000</testcase:targetCaptureCompileTime>
+      <testcase:interface>../Interfaces/CWXTCOBG.interface#Unit%20Test/Interfaces/CWXTCOBG.interface</testcase:interface>
+      <testcase:input listructure="../Structures/CWXTCOBG_PARMINFO.listructure#Unit%20Test/Structures/CWXTCOBG_PARMINFO.listructure">
+        <testcase:data baseType="listructure:structType ../Structures/CWXTCOBG_PARMINFO.listructure#PARMINFO" id="arg0.PARMINFO">
+          <properties:properties>
+            <properties:property name="value" type="string">0005F0F0F0F0F1</properties:property>
+            <properties:property name="expectedValue" type="string">0005F0F0F0F0F2</properties:property>
+          </properties:properties>
+        </testcase:data>
+      </testcase:input>
+      <testcase:checkconditions>
+        <checkconditions:complexCheckcondition message="Complex check condition failed" name="Complex check condition"/>
+      </testcase:checkconditions>
+      <testcase:stubs>
+        <testcase:stub>../Stubs/CWXTCOBG_CWXTDATE_01.stub#Unit%20Test/Stubs/CWXTCOBG_CWXTDATE_01.stub</testcase:stub>
+        <testcase:stub>../Stubs/CWXTCOBG_CWXTSUBC_01.stub#Unit%20Test/Stubs/CWXTCOBG_CWXTSUBC_01.stub</testcase:stub>
+        <testcase:stub>../Stubs/CWXTCOBG_RPTFILE_FILE_01.stub#Unit%20Test/Stubs/CWXTCOBG_RPTFILE_FILE_01.stub</testcase:stub>
+        <testcase:stub>../Stubs/CWXTCOBG_EMPFILE_FILE_01.stub#Unit%20Test/Stubs/CWXTCOBG_EMPFILE_FILE_01.stub</testcase:stub>
+        <testcase:stub>../Stubs/CWXTCOBG_DATETIME_01.stub#Unit%20Test/Stubs/CWXTCOBG_DATETIME_01.stub</testcase:stub>
+      </testcase:stubs>
+      <testcase:returncode listructure="../Structures/CWXTCOBG_RETURN-CODE.listructure#Unit%20Test/Structures/CWXTCOBG_RETURN-CODE.listructure">
+        <testcase:data baseType="listructure:structType ../Structures/CWXTCOBG_RETURN-CODE.listructure#RETURN_CODE" id="arg0.RETURN_CODE">
+          <properties:properties>
+            <properties:property name="expectedValue" type="string">0000</properties:property>
+          </properties:properties>
+        </testcase:data>
+      </testcase:returncode>
+    </testscenario:testcase>
+  </testscenario:testcases>
+</testscenario:testscenario>

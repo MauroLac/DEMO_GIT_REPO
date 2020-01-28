@@ -1,0 +1,56 @@
+16:06:15.042 COMMENT   Engine           Test Scenario execution started
+16:06:15.043 INFO      Engine           Using context settings:
+  Engine Version       : 19.6.1
+  Environment id                : 5ddd531b2bb63619d0641aaf
+  Environment type              : Batch
+  Operating system              : ZOS
+  zOS agent version             : NEWEST
+  Server address                : cwcc.compuware.com
+  Server port                   : 16196
+  Job execution timeout seconds : 600
+  Job info interval seconds     : 3
+  Socket read timeout           : 30
+  Encoding                      : ISO8859-1
+  Codepage                      : IBM-1047
+  Host user Id                  : 
+16:06:15.043 INFO      Engine           Setting variables from context and context data extensions
+16:06:15.043 INFO      Engine             id: environmentId      value: 5ddd531b2bb63619d0641aaf
+16:06:15.043 INFO      Engine             id: environmentType    value: BATCH
+16:06:15.043 INFO      Engine             id: userId             value: 
+16:06:15.045 INFO      Variable         Interpreting Variable id:data dataFile:TestScenario1_data.xlsx
+16:06:15.458 LOG       Variable         Resolved data items from file TestScenario1_data.xlsx
+<testcase>
+  <Field1>0</Field1>
+  <Field2>0</Field2>
+</testcase>
+<testcase>
+  <Field1>0</Field1>
+  <Field2>0</Field2>
+</testcase>
+<testcase>
+  <Field1>0</Field1>
+  <Field2>0</Field2>
+</testcase>
+16:06:15.459 INFO      IterateData      Interpreting IterateData id: loop. Number of data iterations: 3. Variable loopIndex contains iteration number
+16:06:15.460 INFO      IterateData      Iteration number 0 started.
+16:06:15.460 LOG       IterateData      Iteration Data:
+<testcase xmlns="http://www.xact.dk/xatester/v/1">
+  <Field1>0</Field1>
+  <Field2>0</Field2>
+</testcase>
+16:06:15.460 INFO      Component        Interpreting Component: CWXTSUBC program:CWXTSUBC
+16:06:15.493 LOG       CWCC BATCH       Component Runtime Settings:
+16:06:15.493 LOG       CWCC BATCH         Load libraries :SALESSUP.ISPW.PLAY.DEV1.LOAD,SALESSUP.ISPW.PLAY.STG1.LOAD,SALESSUP.ISPW.PLAY.PRD.LOAD
+16:06:15.493 LOG       CWCC BATCH         Optional main Load library:
+16:06:15.493 LOG       CWCC BATCH         Listing libraries         :
+16:06:15.493 LOG       CWCC BATCH         SysDebug libraries        :
+16:06:15.493 LOG       CWCC BATCH         DB2 Subsystem ID          :
+16:06:15.493 LOG       CWCC BATCH         DB2 plan                  :
+16:06:15.493 LOG       CWCC BATCH         Call interface            :NONE
+16:06:15.493 LOG       CWCC BATCH         Debugger type             :NONE
+16:06:15.493 LOG       CWCC BATCH         Component type            :COBOL
+16:06:15.494 ERROR     Engine           Unable to execute the module:CWXTSUBC at the host. Userid must be set
+16:06:15.494 ERROR     Engine           An error occurred. Now stopping the execution.
+16:06:15.494 ERROR     IterateData      Iteration unexpectedly stopped. Child component failed.
+16:06:15.494 INFO      IterateData      IterateData completed
+16:06:15.494 COMMENT   Engine           Test Scenario execution ended
